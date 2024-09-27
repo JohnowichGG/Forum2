@@ -1,32 +1,35 @@
 <?php
-include 'Connection.php'; 
-?>
+session_start(); // Start sessionen
 
-<?php
-// prepare and bind
-$stmt = $conn->prepare("INSERT INTO Brugere (firstname, lastname, email) VALUES (?, ?, ?)");
-$stmt->bind_param("sss", $firstname, $lastname, $email);
+// Sørg for, at brugeren er logget ind
+if (!isset($_SESSION['Brugernavn'])) {
+    die("Du skal være logget ind for at oprette et indlæg.");
+}
 
-// set parameters and execute
-$firstname = $_POST["firstname"];
-$lastname = $_POST["firstname"];
-$email = $_POST["email"];
-$stmt->execute();
+include 'DBconnection.php'; // Inkluder databaseforbindelsen
 
-echo "New record created successfully";
+// Hent data fra formularen
+$titel = htmlspecialchars($_POST['title']); // HTML-special chars for at undgå XSS
+$indhold = htmlspecialchars($_POST['content']);
+$bruger = $_SESSION['Brugernavn']; // Hent brugernavn fra sessionen
 
+// Forbered SQL-forespørgsel til indsættelse af indlægget i Posts-tabellen
+$sql = "INSERT INTO Posts (title, content, author, created_at) VALUES (?, ?, ?, NOW())"; // Rettet: Tilføjet 'author'
+
+// Brug prepared statements for at undgå SQL-injection
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("sss", $titel, $indhold, $bruger);
+
+// Udfør forespørgslen
+if ($stmt->execute()) {
+    echo "Indlæg gemt med succes!";
+} else {
+    echo "Fejl: " . $sql . "<br>" . $conn->error;
+}
+
+// Luk forbindelsen
 $stmt->close();
 $conn->close();
 ?>
 
-<a href="InsertGuest.php">Back</a>
-<!--
-<html>
-<body>
-
-Welcome <?php echo $_POST["firstname"]; ?><br>
-Your email address is: <?php echo $_POST["email"]; ?>
-
-</body>
-</html>
--->
+<a href="Postsubmit.html">Klik her for at komme til forsiden :)</a>

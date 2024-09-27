@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "Jonas";
-$password = "Hansenberg";
-$dbname = "mydb";
+$servername = "mysql49.unoeuro.com";
+$username = "ddujonas_dk";
+$password = "xz3c94Enek26HmydtaRg";
+$dbname = "ddujonas_dk_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

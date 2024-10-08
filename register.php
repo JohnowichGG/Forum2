@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->execute()) {
         $_SESSION['Brugernavn'] = $username;
-        header("Location: topic.html"); // Redirect efter oprettelse
+        header("Location: topicside.html"); // Redirect efter oprettelse
         exit;
     } else {
         echo "Der opstod en fejl. Prøv igen.";

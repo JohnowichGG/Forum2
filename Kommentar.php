@@ -2,7 +2,7 @@
 <html>
 <body>
 <?php
-include 'Connection.php'; 
+include 'DBConnection.php'; 
 ?>
 
 <form action="comments.php" method="POST">

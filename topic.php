@@ -1,24 +1,33 @@
 <?php
 include 'DBconnection.php'; // Forbind til databasen
 
-// Hent eksisterende emner fra databasen
-$sql = "SELECT * FROM emne";
+// Hent alle tabeller fra den angivne database
+$sql = "SHOW TABLES";
 $result = $conn->query($sql);
 
-// Hvis der er emner i databasen, vis dem
+// Tjek om forespørgslen er udført korrekt
 if ($result) {
     if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            // Opret et link til hvert emne, der dirigerer til indhold.php
-            echo "<li><a class='topic-button' href='indhold.php?topic=" . urlencode($row['title']) . "'>" . htmlspecialchars($row['title']) . "</a></li>";
+        echo "<h2>Tabeller i databasen:</h2>";
+        echo "<ul>";
+        // Loop gennem alle tabeller og vis dem
+        while ($row = $result->fetch_row()) {
+            echo "<li>" . htmlspecialchars($row[0]) . "</li>"; // Viser tabellens navn
         }
+        echo "</ul>";
     } else {
-        echo "Ingen emner fundet.";
+        echo "Ingen tabeller fundet.";
     }
 } else {
-    // Fejl ved udførelse af SELECT-forespørgslen
-    echo "Fejl ved hentning af emner: " . $conn->error;
+    echo "Fejl ved hentning af tabeller: " . $conn->error;
 }
 
+<?php
+echo "Dette er en test for at se, om topic.php inkluderes.";
+?>
+
+
+// Luk forbindelsen
 $conn->close();
 ?>
+

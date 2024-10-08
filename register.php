@@ -1,3 +1,6 @@
+<div class="menu">
+    <?php include 'Menu.php'; ?>
+</div>
 <?php
 session_start(); // Start sessionen
 

@@ -1,4 +1,3 @@
-
 <?php
 include 'DBconnection.php'; // Forbind til databasen
 
@@ -6,7 +5,7 @@ include 'DBconnection.php'; // Forbind til databasen
 $tableName = 'emne'; // Tabelnavn
 
 // Hent data fra den angivne tabel
-$dataSql = "SELECT * FROM `$tableName`"; // Hent alle data
+$dataSql = "SELECT * FROM $tableName"; // Hent alle data
 $dataResult = $conn->query($dataSql);
 
 // Tjek om forespørgslen er udført korrekt
@@ -31,7 +30,7 @@ if ($dataResult) {
             }
             // Tilføj en knap til at skrive et indlæg
             $topicId = $dataRow['id']; // Antager, at 'id' er kolonnenavnet
-            echo "<td><a href='Postsubmit.php?topic_id=" . $topicId . "'><button>Skriv Indl&aeligg</button></a></td>"; // Knap til at skrive indlæg
+            echo "<td><a href='Allepost.php?topic_id=" . $topicId . "'><button>Klik her</button></a></td>"; // Knap til at gå til emnet
             echo "</tr>";
         }
         echo "</table>";

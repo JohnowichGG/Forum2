@@ -15,7 +15,7 @@
 
     <ul id="topics-list">
         <!-- Her bliver emner listet -->
-        <?php include 'topic.php'; ?>
+        <?php include 'topicshow.php'; ?>
         <?php include 'add_topic.php'; ?>
 
     </ul>

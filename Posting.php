@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opret Indlæg</title>
+    <title>Opret Forumindlæg</title>
 </head>
 <body>
-    <div class="menu">
-        <?php include 'Menu.php'; ?>
-    </div>
+    <h2>Opret et nyt forumindlæg</h2>
+    <form action="Postsubmit.php" method="post">
+        <label for="title">Titel:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
 
-    <h1>Opret Indlæg</h1>
+        <label for="content">Indhold:</label><br>
+        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br><br>
 
-    <h2>Indhold for Emne</h2>
-    <form action="PostSubmit.php" method="POST">
-        <label for="post-title">Titel:</label><br>
-        <input type="text" id="post-title" name="title" required><br>
-        <label for="post-content">Indhold:</label><br>
-        <textarea id="post-content" name="content" required></textarea><br>
-        <input type="hidden" name="topic" value="<?php echo htmlspecialchars($_GET['topic']); ?>">
-        <input type="submit" value="Opret Indlæg">
+        <label for="author">Forfatter:</label><br>
+        <input type="text" id="author" name="author" required><br><br>
+
+        <input type="submit" value="Opret indlæg">
     </form>
 </body>
 </html>

@@ -1,117 +1,73 @@
-<div class="menu">
-    <?php include 'Menu.php'; ?>
-</div>
-
 <?php
 include 'DBconnection.php'; // Forbind til databasen
 
-// Tjekker om emne-ID er sendt via URL
-if (isset($_GET['topic_id'])) {
-    $topicId = $_GET['topic_id'];
-} else {
-    echo "Ingen emne-ID angivet.";
-    exit;
-}
+// Hent topic_id fra URL
+$topicId = isset($_GET['topic_id']) ? (int)$_GET['topic_id'] : 0;
 
-// Hent emnetitel baseret på topic_id
-$sql = "SELECT title FROM emne WHERE id = ?"; // Antager at 'emne' er navnet på tabellen og 'id' er kolonnen
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $topicId); // "i" for integer
-$stmt->execute();
-$result = $stmt->get_result();
+// Start sessionen for at få adgang til sessiondata
+session_start(); 
 
-if ($result->num_rows > 0) {
-    $topic = $result->fetch_assoc();
-    $topicTitle = $topic['title']; // Hent emnetitlen
-} else {
-    echo "Emnet ikke fundet.";
-    exit;
-}
-
-// Tjekker om formen er blevet sendt
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $postTitle = $_POST['post_title']; // Hent titel fra formularen
     $postContent = $_POST['post_content'];
-    
-    // Hent brugernavnet fra sessionen (forudsætter at brugernavnet er gemt i sessionen)
-    $author = $_SESSION['username'] ?? 'Ukendt'; // Standard til 'Ukendt' hvis brugernavnet ikke er sat
+    $author = $_SESSION['username'] ?? 'Ukendt'; // Hent brugernavnet fra sessionen
 
-    // Forbered SQL-indsættelsen
-    $sql = "INSERT INTO Posts (title, content, author, topic, created_at) VALUES (?, ?, ?, ?, NOW())"; 
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssi", $postTitle, $postContent, $author, $topicId); // "s" for string, "i" for integer
+    // Hent emne titel baseret på topicId for at gemme den rigtige topic
+    $topicQuery = $conn->prepare("SELECT title FROM emne WHERE id = ?");
+    $topicQuery->bind_param("i", $topicId);
+    $topicQuery->execute();
+    $topicResult = $topicQuery->get_result();
+    $topicRow = $topicResult->fetch_assoc();
 
-    // Udfør forespørgslen
-    if ($stmt->execute()) { 
-        echo "Indl&aeligg oprettet med succes!";
+    if ($topicRow) {
+        // Forbered SQL-indsættelsen
+        $sql = "INSERT INTO Posts (title, content, author, topic, created_at) VALUES (?, ?, ?, ?, NOW())"; 
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ssss", $postTitle, $postContent, $author, $topicRow['title']); // Brug emnetitel i stedet for topicId
+
+        // Udfør forespørgslen
+        if ($stmt->execute()) {
+            echo "<p>Indlæg oprettet med succes! <a href='Allepost.php?topic_id=" . $topicId . "'>Se indlæg</a></p>";
+        } else {
+            echo "Fejl ved oprettelse af indlæg: " . $stmt->error;
+        }
+
+        // Luk forbindelsen
+        $stmt->close();
     } else {
-        echo "Fejl ved oprettelse af indlg: " . $stmt->error;
+        echo "Emnet blev ikke fundet.";
     }
 
-    // Luk statement
-    $stmt->close();
+    $conn->close();
+    exit;
 }
 
-?>
+// Hent data fra emnetabellen
+$tableName = 'emne'; // Tabelnavn
+$dataSql = "SELECT * FROM $tableName WHERE id = ?"; // Hent data for det specifikke emne
+$stmt = $conn->prepare($dataSql);
+$stmt->bind_param("i", $topicId);
+$stmt->execute();
+$dataResult = $stmt->get_result();
 
-<!DOCTYPE html>
-<html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skriv Indl&aeligg</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .menu {
-            position: absolute; /* Gør menuen positioneret */
-            top: 10px; /* Afstand fra toppen */
-            left: 10px; /* Afstand fra venstre */
-            z-index: 1000; /* Sørger for at menuen er ovenfor andre elementer */
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Fuld højde af viewport */
-        }
-        h1 {
-            text-align: center; /* Centerer overskriften */
-        }
-        input[type="text"],
-        textarea {
-            width: 100%; /* Gør tekstfelterne 100% af containerens bredde */
-            padding: 10px; /* Indvendig polstring */
-            margin-bottom: 10px; /* Margin mellem felter */
-            font-size: 16px; /* Størrelse på teksten */
-        }
-        input[type="submit"] {
-            padding: 10px 20px; /* Indvendig polstring */
-            font-size: 16px; /* Størrelse på teksten */
-            cursor: pointer; /* Markør ved hover */
-        }
-    </style>
-</head>
-<body>
-    <div class="menu">
-        <?php include 'Menu.php'; ?>
-    </div>
-    
-    <div class="container">
-        <h1>Skriv Indl&aeligg til Emnet: <?php echo htmlspecialchars($topicTitle); ?></h1>
-        <form action="write_post.php?topic_id=<?php echo $topicId; ?>" method="POST">
-            <label for="post_title">Titel:</label><br>
-            <input type="text" id="post_title" name="post_title" required><br>
-            
-            <label for="post_content">Indhold:</label><br>
-            <textarea id="post_content" name="post_content" required></textarea><br>
-            
-            <input type="submit" value="Opret Indlæg">
-        </form>
-    </div>
-</body>
-</html>
+// Tjek om forespørgslen er udført korrekt
+if ($dataResult) {
+    // Tjek om der er data i tabellen
+    if ($dataResult->num_rows > 0) {
+        echo "<h2>Opret Indlæg til emnet: " . htmlspecialchars($topicRow['title'], ENT_QUOTES, 'UTF-8') . "</h2>";
+        echo "<form method='POST' action='Postsubmit.php?topic_id=" . $topicId . "'>"; // Form til at oprette indlæg
+        echo "<input type='text' name='post_title' placeholder='Indlægstitel' required>";
+        echo "<textarea name='post_content' placeholder='Skriv dit indlæg her...' required></textarea>";
+        echo "<button type='submit'>Opret Indlæg</button>";
+        echo "</form>";
+    } else {
+        echo "Ingen data fundet i tabellen.";
+    }
+} else {
+    echo "Fejl ved hentning af data fra tabellen: " . $conn->error;
+}
+
+// Luk forbindelsen
+$stmt->close();
+$conn->close();
+?>

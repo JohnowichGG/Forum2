@@ -1,33 +1,47 @@
+
 <?php
 include 'DBconnection.php'; // Forbind til databasen
 
-// Hent alle tabeller fra den angivne database
-$sql = "SHOW TABLES";
-$result = $conn->query($sql);
+// Angiv tabelnavnet
+$tableName = 'emne'; // Tabelnavn
+
+// Hent data fra den angivne tabel
+$dataSql = "SELECT * FROM `$tableName`"; // Hent alle data
+$dataResult = $conn->query($dataSql);
 
 // Tjek om forespørgslen er udført korrekt
-if ($result) {
-    if ($result->num_rows > 0) {
-        echo "<h2>Tabeller i databasen:</h2>";
-        echo "<ul>";
-        // Loop gennem alle tabeller og vis dem
-        while ($row = $result->fetch_row()) {
-            echo "<li>" . htmlspecialchars($row[0]) . "</li>"; // Viser tabellens navn
+if ($dataResult) {
+    // Tjek om der er data i tabellen
+    if ($dataResult->num_rows > 0) {
+        echo "<table border='1'>";
+        echo "<tr>";
+        
+        // Hent kolonnenavne og tilføj en kolonne for knappen
+        while ($fieldInfo = $dataResult->fetch_field()) {
+            echo "<th>" . htmlspecialchars($fieldInfo->name) . "</th>"; // Kolonnenavne
         }
-        echo "</ul>";
+        echo "<th>Handling</th>"; // Ny kolonne for handling
+        echo "</tr>";
+
+        // Loop gennem dataene og vis dem
+        while ($dataRow = $dataResult->fetch_assoc()) {
+            echo "<tr>";
+            foreach ($dataRow as $value) {
+                echo "<td>" . htmlspecialchars($value) . "</td>"; // Data værdier
+            }
+            // Tilføj en knap til at skrive et indlæg
+            $topicId = $dataRow['id']; // Antager, at 'id' er kolonnenavnet
+            echo "<td><a href='Postsubmit.php?topic_id=" . $topicId . "'><button>Skriv Indl&aeligg</button></a></td>"; // Knap til at skrive indlæg
+            echo "</tr>";
+        }
+        echo "</table>";
     } else {
-        echo "Ingen tabeller fundet.";
+        echo "Ingen data fundet i tabellen.";
     }
 } else {
-    echo "Fejl ved hentning af tabeller: " . $conn->error;
+    echo "Fejl ved hentning af data fra tabellen: " . $conn->error;
 }
-
-<?php
-echo "Dette er en test for at se, om topic.php inkluderes.";
-?>
-
 
 // Luk forbindelsen
 $conn->close();
 ?>
-

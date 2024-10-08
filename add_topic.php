@@ -1,45 +1,40 @@
 <?php
 include 'DBconnection.php'; // Forbind til databasen
 
-// Tjek, om formularen er blevet sendt
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Hent id og emnet fra formularen og beskyt mod XSS
-    $new_id = (int)$_POST['id']; // Sørg for at konvertere til integer
-    $new_topic = htmlspecialchars($_POST['topic']);
+$emneOprettet = false; // Variabel til at spore om et emne er blevet oprettet
+$emneEksisterer = false; // Variabel til at spore om emnet allerede eksisterer
 
-    // Tjek om emnet allerede findes i databasen
-    $check_sql = "SELECT * FROM emne WHERE title = ?";
-    $check_stmt = $conn->prepare($check_sql);
-    $check_stmt->bind_param("s", $new_topic);
-    $check_stmt->execute();
-    $check_result = $check_stmt->get_result();
+// Tjekker om formen er blevet sendt
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Hent emnetitlen fra formularen
+    $topic = $_POST['topic'];
 
-    if ($check_result->num_rows > 0) {
-        echo "Emnet '$new_topic' findes allerede i databasen.";
+    // Tjek om emnet allerede eksisterer
+    $sql = "SELECT * FROM emne WHERE title = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $topic);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        // Emnet eksisterer allerede
+        $emneEksisterer = true;
     } else {
-        // Forbered SQL-forespørgslen til indsættelse
-        $sql = "INSERT INTO emne (id, title) VALUES (?, ?)";
+        // Emnet eksisterer ikke, så vi kan oprette det
+        $sql = "INSERT INTO emne (title) VALUES (?)"; // Antager at du har en kolonne kaldet 'title' i din 'emne'-tabel
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("s", $topic); // "s" betyder, at parameteren er en streng
 
-        // Brug prepared statements for at undgå SQL-injection
-        if ($stmt = $conn->prepare($sql)) {
-            $stmt->bind_param("is", $new_id, $new_topic);
-
-            // Udfør forespørgslen
-            if ($stmt->execute()) {
-                echo "Nyt emne oprettet med succes!";
-            } else {
-                echo "Fejl ved oprettelse af emne: " . $stmt->error;
-            }
-
-            // Luk statement
-            $stmt->close();
+        // Udfør forespørgslen
+        if ($stmt->execute()) {
+            $emneOprettet = true; // Emne er nu oprettet
         } else {
-            echo "Fejl i forberedelse af forespørgslen: " . $conn->error;
+            echo "Fejl ved oprettelse af emne: " . $stmt->error;
         }
     }
 
-    // Luk check statement
-    $check_stmt->close();
+    // Luk statement
+    $stmt->close();
 }
 
 // Luk forbindelsen
@@ -55,12 +50,22 @@ $conn->close();
 </head>
 <body>
     <h1>Opret Nyt Emne</h1>
-    <form action="add_topic.php" method="POST">
-        <label for="id">ID:</label><br>
-        <input type="number" id="id" name="id" required><br>
-        <label for="topic">Emnetitel:</label><br>
-        <input type="text" id="topic" name="topic" required><br>
-        <input type="submit" value="Opret Emne">
-    </form>
+    <?php if ($emneOprettet): ?>
+        <p>Nyt emne oprettet med succes!</p>
+        <form action="topicside.php" method="GET">
+            <input type="submit" value="Gå tilbage til emnesiden">
+        </form>
+    <?php elseif ($emneEksisterer): ?>
+        <p>Dette emne eksisterer allerede!</p>
+        <form action="topicside.php" method="GET">
+            <input type="submit" value="Gå tilbage til emnesiden">
+        </form>
+    <?php else: ?>
+        <form action="add_topic.php" method="POST">
+            <label for="topic">Emnetitel:</label><br>
+            <input type="text" id="topic" name="topic" required><br>
+            <input type="submit" value="Opret Emne">
+        </form>
+    <?php endif; ?>
 </body>
 </html>

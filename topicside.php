@@ -13,8 +13,6 @@
 <body>
     <h1>Forum Emner</h1>
 
-
-    <h2>V&aeliglg et Emne</h2>
     <ul id="topics-list">
         <!-- Her bliver emner listet -->
         <?php include 'topic.php'; ?>

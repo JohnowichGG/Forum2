@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($password === $row['password']) { // Direkte sammenligning
             // Sæt sessionen
             $_SESSION['Brugernavn'] = $row['Brugernavn'];
-            header("Location: topicside.html"); // Redirect til topics
+            header("Location: topicside.php"); // Redirect til topics
             exit;
         } else {
             echo "Ugyldigt brugernavn eller adgangskode.";

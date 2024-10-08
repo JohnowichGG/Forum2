@@ -1,0 +1,43 @@
+<div class="menu">
+    <?php include 'Menu.php'; ?>
+</div>
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Emner</title>
+    <style>
+        /* CSS til knapperne */
+        .topic-button {
+            display: inline-block; /* Gør linkene til knapper */
+            padding: 10px 20px; /* Indre afstand */
+            margin: 5px; /* Ydre afstand */
+            background-color: #007BFF; /* Blå baggrund */
+            color: white; /* Hvid tekst */
+            text-decoration: none; /* Fjern understregning */
+            border-radius: 5px; /* Kanter */
+            transition: background-color 0.3s; /* Effekt ved hover */
+        }
+
+            .topic-button:hover {
+                background-color: #0056b3;
+            }
+
+        #topics-list {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forum Emner</h1>
+
+    <h2>V&aeliglg et Emne</h2>
+    <ul id="topics-list">
+        <!-- Her bliver emner listet -->
+        <?php include 'topic.php'; ?>
+    </ul>
+</body>
+</html>

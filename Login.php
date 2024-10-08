@@ -17,11 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Tjek om brugeren blev fundet
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
-        // Verificer adgangskoden
-        if (password_verify($password, $row['password'])) {
+        if ($password === $row['password']) { // Direkte sammenligning
             // Sæt sessionen
             $_SESSION['Brugernavn'] = $row['Brugernavn'];
-            header("Location: Postsubmit.html"); // Redirect til forsiden eller en anden side
+            header("Location: topic.html"); // Redirect til topics
             exit;
         } else {
             echo "Ugyldigt brugernavn eller adgangskode.";

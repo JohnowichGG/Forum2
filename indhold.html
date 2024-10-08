@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indlæg for Emne</title>
+</head>
+<body>
+    <div class="menu">
+        <?php include 'Menu.php'; ?>
+    </div>
+
+    <h1>Indlæg for Emne</h1>
+
+    <h2>Indlæg</h2>
+    <div id="posts-list">
+        <!-- Her vises indlæg fra indhold.php -->
+        <?php include 'indhold.php'; ?>
+    </div>
+
+    <h2>Opret et Indlæg</h2>
+    <form action="PostSubmit.php" method="POST">
+        <label for="post-content">Indhold:</label><br>
+        <textarea id="post-content" name="post_content" required></textarea><br>
+        <input type="submit" value="Opret Indlæg">
+    </form>
+</body>
+</html>

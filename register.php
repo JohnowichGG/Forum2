@@ -19,17 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Brugernavn eller e-mail er allerede i brug.");
     }
 
-    // Hash adgangskoden før lagring i databasen
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-    // Opret den nye bruger
+    // Opret den nye bruger med adgangskode
     $insert_sql = "INSERT INTO Brugere (Brugernavn, email, password) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($insert_sql);
-    $stmt->bind_param("sss", $username, $email, $hashed_password);
+    $stmt->bind_param("sss", $username, $email, $password); 
 
     if ($stmt->execute()) {
         $_SESSION['Brugernavn'] = $username;
-        header("Location: Postsubmit.html"); // Redirect efter oprettelse
+        header("Location: topic.html"); // Redirect efter oprettelse
         exit;
     } else {
         echo "Der opstod en fejl. Prøv igen.";

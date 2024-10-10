@@ -1,10 +1,7 @@
-<div class="menu">
-    <?php include 'Menu.php'; ?>
-</div>
 <?php
-session_start(); // Start sessionen
+session_start(); 
 
-include 'DBconnection.php'; // Inkluder databaseforbindelsen
+include 'DBconnection.php'; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = htmlspecialchars($_POST['username']);
@@ -24,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Opret den nye bruger med adgangskode
     $insert_sql = "INSERT INTO Brugere (Brugernavn, email, password) VALUES (?, ?, ?)";
-    $stmt = $conn->prepare($insert_sql);
+    $stmt->prepare($insert_sql);
     $stmt->bind_param("sss", $username, $email, $password); 
 
     if ($stmt->execute()) {
@@ -39,3 +36,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
+
+<div class="menu">
+    <?php include 'Menu.php'; ?>
+</div>
+
+
+<form method="POST" action="register.php">
+    <input type="text" name="username" placeholder="Brugernavn" required>
+    <input type="email" name="email" placeholder="E-mail" required>
+    <input type="password" name="password" placeholder="Adgangskode" required>
+    <button type="submit">Registrer</button>
+</form>

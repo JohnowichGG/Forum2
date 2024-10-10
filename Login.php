@@ -27,10 +27,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     } else {
         echo "Brugeren findes ikke.";
-    }
+    } 
 
     // Luk forbindelsen
     $stmt->close();
     $conn->close();
 }
 ?>
+
+<div class="menu">
+    <?php include 'Menu.php'; ?>
+</div>

@@ -26,7 +26,7 @@ if (!$topicTitle) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indlægsoversigt for <?php echo htmlspecialchars($topicTitle['title'], ENT_QUOTES, 'UTF-8'); ?></title>
+    <title>Indl&aelig;gsoversigt for <?php echo htmlspecialchars($topicTitle['title'], ENT_QUOTES, 'UTF-8'); ?></title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,8 +36,8 @@ if (!$topicTitle) {
         }
         .submit-btn {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            bottom: 600px;
+            right: 80px;
             padding: 10px 20px;
             background-color: #4CAF50;
             color: white;
@@ -82,7 +82,7 @@ if (!$topicTitle) {
     </style>
 </head>
 <body>
-    <a href="Postsubmit.php?topic_id=<?php echo $topic_id; ?>" class="submit-btn">Skriv Indlæg</a>
+    <a href="Postsubmit.php?topic_id=<?php echo $topic_id; ?>" class="submit-btn">Skriv Indl&aelig;g</a>
 
     <div class="post-container">
         <?php
@@ -111,7 +111,7 @@ if (!$topicTitle) {
                 echo "</div>";
             }
         } else {
-            echo "<p>Ingen indlæg fundet for emnet '" . htmlspecialchars($topicTitle['title'], ENT_QUOTES, 'UTF-8') . "'.</p>";
+            echo "<p>Ingen indl&aelig;g fundet for emnet '" . htmlspecialchars($topicTitle['title'], ENT_QUOTES, 'UTF-8') . "'.</p>";
         }
 
         // Luk forbindelsen
@@ -120,3 +120,11 @@ if (!$topicTitle) {
     </div>
 </body>
 </html>
+
+<div class="menu">
+    <?php include 'Menu.php'; ?>
+</div>
+
+<div class="tilbage">
+<?php include 'Tilbage.php'; ?>
+</div>

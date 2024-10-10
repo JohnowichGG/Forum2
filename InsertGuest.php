@@ -31,12 +31,12 @@
     <p>V&aeliglg hvad du vil</p>
     
     <!-- Knap til login-siden -->
-    <form action="login.html" method="GET">
+    <form action="loggin.php" method="GET">
         <button type="submit" class="button">Log ind</button>
     </form>
 
     <!-- Knap til registrerings-siden -->
-    <form action="register.html" method="GET">
+    <form action="registering.php" method="GET">
         <button type="submit" class="button">Opret Profil</button>
     </form>
 </div>

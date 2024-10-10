@@ -1,16 +1,18 @@
 <?php
 include 'DBconnection.php'; // Forbind til databasen
 
+// Start sessionen kun hvis den ikke allerede er startet
+if (session_status() === PHP_SESSION_NONE) {
+    session_start(); 
+}
+
 // Hent topic_id fra URL
 $topicId = isset($_GET['topic_id']) ? (int)$_GET['topic_id'] : 0;
-
-// Start sessionen for at få adgang til sessiondata
-session_start(); 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $postTitle = $_POST['post_title']; // Hent titel fra formularen
     $postContent = $_POST['post_content'];
-    $author = $_SESSION['username'] ?? 'Ukendt'; // Hent brugernavnet fra sessionen
+    $author = $_SESSION['Brugernavn'] ?? 'Ukendt'; // Hent brugernavnet fra sessionen
 
     // Hent emne titel baseret på topicId for at gemme den rigtige topic
     $topicQuery = $conn->prepare("SELECT title FROM emne WHERE id = ?");
@@ -51,20 +53,16 @@ $stmt->execute();
 $dataResult = $stmt->get_result();
 
 // Tjek om forespørgslen er udført korrekt
-if ($dataResult) {
-    // Tjek om der er data i tabellen
-    if ($dataResult->num_rows > 0) {
-        echo "<h2>Opret Indlæg til emnet: " . htmlspecialchars($topicRow['title'], ENT_QUOTES, 'UTF-8') . "</h2>";
-        echo "<form method='POST' action='Postsubmit.php?topic_id=" . $topicId . "'>"; // Form til at oprette indlæg
-        echo "<input type='text' name='post_title' placeholder='Indlægstitel' required>";
-        echo "<textarea name='post_content' placeholder='Skriv dit indlæg her...' required></textarea>";
-        echo "<button type='submit'>Opret Indlæg</button>";
-        echo "</form>";
-    } else {
-        echo "Ingen data fundet i tabellen.";
-    }
+if ($dataResult->num_rows > 0) {
+    $topicRow = $dataResult->fetch_assoc();
+    echo "<h2>Opret Indlæg til emnet: " . htmlspecialchars($topicRow['title'], ENT_QUOTES, 'UTF-8') . "</h2>";
+    echo "<form method='POST' action='Postsubmit.php?topic_id=" . $topicId . "'>"; // Form til at oprette indlæg
+    echo "<input type='text' name='post_title' placeholder='Indlægstitel' required>";
+    echo "<textarea name='post_content' placeholder='Skriv dit indlæg her...' required></textarea>";
+    echo "<button type='submit'>Opret Indlæg</button>";
+    echo "</form>";
 } else {
-    echo "Fejl ved hentning af data fra tabellen: " . $conn->error;
+    echo "Ingen data fundet i tabellen.";
 }
 
 // Luk forbindelsen

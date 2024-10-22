@@ -29,7 +29,8 @@
     <br />
     <br />
 <div class="container">
-    <p>V&aeliglg hvad du vil</p>
+    <p>!HUSK!</p>
+    <p>hold den pæne tone og hold jer til emnet</p>
     
     <!-- Knap til login-siden -->
     <form action="loggin.php" method="GET">

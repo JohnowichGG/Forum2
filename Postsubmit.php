@@ -1,3 +1,11 @@
+<div class="menu">
+    <?php include 'Menu.php'; ?>
+</div>
+
+<div class="menu">
+    <?php include 'Tilbagepost.php'; ?>
+</div>
+
 <?php
 include 'DBconnection.php'; // Forbind til databasen
 
@@ -55,17 +63,23 @@ $dataResult = $stmt->get_result();
 // Tjek om forespørgslen er udført korrekt
 if ($dataResult->num_rows > 0) {
     $topicRow = $dataResult->fetch_assoc();
-    echo "<h2>Opret Indlæg til emnet: " . htmlspecialchars($topicRow['title'], ENT_QUOTES, 'UTF-8') . "</h2>";
-    echo "<form method='POST' action='Postsubmit.php?topic_id=" . $topicId . "'>"; // Form til at oprette indlæg
-    echo "<input type='text' name='post_title' placeholder='Indlægstitel' required>";
-    echo "<textarea name='post_content' placeholder='Skriv dit indlæg her...' required></textarea>";
+    echo "<h2 style='text-align: center;'>Opret Indlæg til emnet: " . htmlspecialchars($topicRow['title'], ENT_QUOTES, 'UTF-8') . "</h2>";
+    echo "<div style='display: flex; justify-content: center; align-items: center; height: 80vh;'>";
+    echo "<form method='POST' action='Postsubmit.php?topic_id=" . $topicId . "' style='text-align: center; display: flex; flex-direction: column;'>";
+    echo "<input type='text' name='post_title' placeholder='Indlægstitel' required style='margin-bottom: 10px; width: 300px;'>";
+    echo "<textarea name='post_content' placeholder='Skriv dit indlæg her...' required style='margin-bottom: 10px; width: 300px; height: 150px;'></textarea>";
     echo "<button type='submit'>Opret Indlæg</button>";
     echo "</form>";
+    echo "</div>";
 } else {
     echo "Ingen data fundet i tabellen.";
 }
+
+
 
 // Luk forbindelsen
 $stmt->close();
 $conn->close();
 ?>
+
+

@@ -92,7 +92,7 @@ if (!$topicTitle) {
                 Posts.id, Posts.title, Posts.content, Posts.author, Posts.created_at
             FROM 
                 Posts
-            WHERE 
+            WHERE
                 Posts.topic = ?
             ORDER BY 
                 Posts.created_at DESC";
@@ -123,8 +123,4 @@ if (!$topicTitle) {
 
 <div class="menu">
     <?php include 'Menu.php'; ?>
-</div>
-
-<div class="tilbage">
-<?php include 'Tilbage.php'; ?>
 </div>

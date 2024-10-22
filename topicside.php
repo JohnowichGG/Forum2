@@ -1,8 +1,6 @@
-<div class="menu">
-    <?php include 'Menu.php'; ?>
-</div>
+<?php include 'Menu.php'; ?>
 
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="da">
 <head>
     <meta charset="UTF-8">

@@ -1,5 +1,3 @@
-<?php
-echo '
 <style>
     .top-bar {
         position: fixed;
@@ -17,26 +15,22 @@ echo '
         object-fit: cover; /* Sørger for at billedet dækker hele bjælken uden at ændre proportionerne */
     }
 
-    .home-button {
+    .logo-button {
         position: absolute;
-        top: 10px;
-        left: 10px;
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 16px;
-        z-index: 1001; /* Sørger for at knappen er oven på bjælken */
+        top: 5px; /* Juster positionen af logoet */
+        left: 10px; /* Juster positionen af logoet */
+        z-index: 1001; /* Sørger for at logoet er oven på bjælken */
     }
 
-    .home-button:hover {
-        background-color: #45a049;
+    .logo-button img {
+        height: 40px; /* Juster højden på logoet */
+        width: auto; /* Bevar logoets proportioner */
     }
 </style>
 
 <div class="top-bar">
-    <img src="/Billeder/Bjælk.png" alt="Bjælke Billede" onerror="this.src=\'/Billeder/placeholder.png\'">
+    <img src="/Billeder/Bjælk.png" alt="Bjælke Billede" onerror="this.src='/Billeder/placeholder.png'">
 </div>
-<a href="index.php" class="home-button">Home</a>';
-?>
+<a href="topicside.php" class="logo-button">
+    <img src="/Billeder/Logo.png" alt="Logo">
+</a>

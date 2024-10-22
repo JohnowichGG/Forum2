@@ -38,3 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="menu">
     <?php include 'Menu.php'; ?>
 </div>
+
+<div class="tilbage">
+<?php include 'Tilbage.php'; ?>
+</div>

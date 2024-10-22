@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<a href="topicside.php" class="back-button">Tilbage til Emner</a>
+<a href="index.php" class="back-button">Tilbage</a>
 
 <!-- Resten af din side indhold går her -->
 

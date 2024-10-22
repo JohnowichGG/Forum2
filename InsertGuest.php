@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaelig;lg login eller opret profil</title>
+    <title> Velkommen vaelig;lg login eller opret profil</title>
     <style>
         .container {
             text-align: center;
-            margin-top: 100px;
+            margin-top: 200px;
         }
         .button {
             padding: 15px 25px;
@@ -26,8 +26,9 @@
 </head>
 <body>
 
+    <br />
+    <br />
 <div class="container">
-    <h2>Velkommen!</h2>
     <p>V&aeliglg hvad du vil</p>
     
     <!-- Knap til login-siden -->

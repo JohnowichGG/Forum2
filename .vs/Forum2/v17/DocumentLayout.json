@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\InsertGuest.php||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:InsertGuest.php||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\index.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\InsertGuest.php||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:InsertGuest.php||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\Postsubmit.php||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Postsubmit.php||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Tilbagepost.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Tilbagepost.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Tilbage.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Tilbage.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\registering.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:registering.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Allepost.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Allepost.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\add_topic.php||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:add_topic.php||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\register.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:register.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\loggin.php||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:loggin.php||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\Postvisning.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Postvisning.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Baggrund.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Baggrund.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Menu.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -19,52 +59,16 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:topicside.php||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\add_topic.php||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:add_topic.php||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\topicshow.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:topicshow.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\Postsubmit.php||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Postsubmit.php||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Allepost.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Allepost.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\loggin.php||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:loggin.php||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\registering.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:registering.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\register.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:register.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\login.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Tilbage.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Tilbage.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\Postvisning.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Postvisning.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Baggrund.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Baggrund.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jonas\\Source\\Repos\\JohnowichGG\\Forum2\\Posting.php||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -110,11 +114,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "DBinsert.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\DBinsert.php",
               "RelativeDocumentMoniker": "DBinsert.php",
@@ -127,13 +131,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "InsertGuest.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\InsertGuest.php",
               "RelativeDocumentMoniker": "InsertGuest.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\InsertGuest.php",
               "RelativeToolTip": "InsertGuest.php",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-09-27T07:54:39.553Z",
               "IsPinned": true,
@@ -141,13 +145,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "index.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\index.php",
               "RelativeDocumentMoniker": "index.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\index.php",
               "RelativeToolTip": "index.php",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACoAAAADAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAACoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-09-27T11:06:31.326Z",
               "IsPinned": true,
@@ -155,13 +159,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Menu.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Menu.php",
               "RelativeDocumentMoniker": "Menu.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Menu.php",
               "RelativeToolTip": "Menu.php",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAGAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAwCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-09-27T07:56:30.7Z",
               "IsPinned": true,
@@ -169,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "topicshow.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\topicshow.php",
               "RelativeDocumentMoniker": "topicshow.php",
@@ -178,18 +182,17 @@
               "ViewState": "AQIAABMAAAAAAAAAAAAmwC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-08T06:51:07.384Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Postsubmit.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Postsubmit.php",
               "RelativeDocumentMoniker": "Postsubmit.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Postsubmit.php",
               "RelativeToolTip": "Postsubmit.php",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-09-27T07:11:47.611Z",
               "IsPinned": true,
@@ -197,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "topicside.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\topicside.php",
               "RelativeDocumentMoniker": "topicside.php",
@@ -211,13 +214,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "add_topic.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\add_topic.php",
               "RelativeDocumentMoniker": "add_topic.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\add_topic.php",
               "RelativeToolTip": "add_topic.php",
-              "ViewState": "AQIAACwAAAAAAAAAAAAmwEcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-08T09:06:11.62Z",
               "IsPinned": true,
@@ -225,33 +228,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
+              "Title": "Tilbagepost.php",
+              "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Tilbagepost.php",
+              "RelativeDocumentMoniker": "Tilbagepost.php",
+              "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Tilbagepost.php",
+              "RelativeToolTip": "Tilbagepost.php",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-22T08:56:45.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "registering.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\registering.php",
               "RelativeDocumentMoniker": "registering.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\registering.php",
               "RelativeToolTip": "registering.php",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAmwGoAAAAGAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAAAGgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-22T06:32:31.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Allepost.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Allepost.php",
               "RelativeDocumentMoniker": "Allepost.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Allepost.php",
               "RelativeToolTip": "Allepost.php",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAAAH4AAAAAAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAAAHsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-08T11:56:06.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "Baggrund.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Baggrund.php",
               "RelativeDocumentMoniker": "Baggrund.php",
@@ -259,62 +275,64 @@
               "RelativeToolTip": "Baggrund.php",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-09T07:18:40.493Z"
+              "WhenOpened": "2024-10-09T07:18:40.493Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "Tilbage.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Tilbage.php",
               "RelativeDocumentMoniker": "Tilbage.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Tilbage.php",
               "RelativeToolTip": "Tilbage.php",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAHAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-09T08:11:07.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "Postvisning.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Postvisning.php",
               "RelativeDocumentMoniker": "Postvisning.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Postvisning.php",
               "RelativeToolTip": "Postvisning.php",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-08T11:42:12.312Z"
+              "WhenOpened": "2024-10-08T11:42:12.312Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "loggin.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\loggin.php",
               "RelativeDocumentMoniker": "loggin.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\loggin.php",
               "RelativeToolTip": "loggin.php",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAE4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-08T09:03:14.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "register.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\register.php",
               "RelativeDocumentMoniker": "register.php",
               "ToolTip": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\register.php",
               "RelativeToolTip": "register.php",
-              "ViewState": "AQIAADgAAAAAAAAAAAAmwDsAAAAXAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAADsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-10-08T09:16:18.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "register.html",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\register.html",
               "RelativeDocumentMoniker": "register.html",
@@ -325,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "login.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\login.php",
               "RelativeDocumentMoniker": "login.php",
@@ -333,12 +351,11 @@
               "RelativeToolTip": "login.php",
               "ViewState": "AQIAABAAAAAAAAAAAAAmwCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-08T09:03:20.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T09:03:20.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Posting.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Posting.php",
               "RelativeDocumentMoniker": "Posting.php",
@@ -350,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -362,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Naturforum.html",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Naturforum.html",
               "RelativeDocumentMoniker": "Naturforum.html",
@@ -374,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Kommentar.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Kommentar.php",
               "RelativeDocumentMoniker": "Kommentar.php",
@@ -386,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "indhold.html",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\indhold.html",
               "RelativeDocumentMoniker": "indhold.html",
@@ -398,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "indhold.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\indhold.php",
               "RelativeDocumentMoniker": "indhold.php",
@@ -410,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "DBconnection.php",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\DBconnection.php",
               "RelativeDocumentMoniker": "DBconnection.php",
@@ -422,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Hjemmeside.html",
               "DocumentMoniker": "C:\\Users\\jonas\\source\\repos\\JohnowichGG\\Forum2\\Hjemmeside.html",
               "RelativeDocumentMoniker": "Hjemmeside.html",
